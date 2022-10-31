@@ -1,0 +1,9 @@
+{
+	"name": "RockyLinux9.0 開発環境",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "rockylinux9.0",
+	"containerUser": "NaoyaOgura",
+	"workspaceFolder": "/home/NaoyaOgura"
+}
