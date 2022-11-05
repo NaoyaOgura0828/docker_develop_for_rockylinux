@@ -6,8 +6,11 @@ ARG USER_NAME
 # Repository Update
 RUN dnf update -y
 
-# sudo Install
+# Install sudo
 RUN dnf install sudo -y
+
+# Install git
+RUN dnf install git -y
 
 # Add User
 RUN adduser ${USER_NAME} --badnames
