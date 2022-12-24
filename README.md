@@ -4,7 +4,7 @@ DockerでRockyLinux開発環境を構築する。
 <br>
 
 # Requirement
-Fedora36ローカル環境で実行確認済。
+Fedora37ローカル環境で実行確認済。
 <br>
 VSCodeとVSCode拡張機能をInstallする。
 - VS Code
@@ -33,11 +33,11 @@ USER_NAME = ${実行ユーザー名}
 
 ```json
 {
-	"name": "RockyLinux9.0 開発環境",
+	"name": "RockyLinux9 開発環境",
 	"dockerComposeFile": [
 		"../docker-compose.yml"
 	],
-	"service": "rockylinux9.0",
+	"service": "rockylinux9",
 	"containerUser": "${実行ユーザー名}",
 	"workspaceFolder": "/home/${実行ユーザー名}"
 }
@@ -84,5 +84,5 @@ IP = ${IPアドレス}
 
 2回目以降
 1. VSCodeを起動し、左メニューから拡張機能`リモートエクスプローラー`を押下する。
-2. プルダウンを`Containers`に変更し、コンテナ一覧に表示されている`docker_develop_for_rockylinux-rockylinux9.0-1`にマウスオーバーする。
-3. `docker_develop_for_rockylinux-rockylinux9.0-1`右に表示される`フォルダアイコン`を押下する。
+2. プルダウンを`Containers`に変更し、コンテナ一覧に表示されている`docker_develop_for_rockylinux-rockylinux9-1`にマウスオーバーする。
+3. `docker_develop_for_rockylinux-rockylinux9-1`右に表示される`フォルダアイコン`を押下する。
